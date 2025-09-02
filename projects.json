@@ -1,0 +1,64 @@
+{
+  "projects": [
+    {
+      "title": "Modern Learning Content Management System Website",
+      "description": "A dynamic platform for educators to manage courses, quizzes, and student progress with modern UI/UX, built using React and Node.js for seamless content delivery.",
+      "image": "https://via.placeholder.com/400x250?text=Modern+LMS",
+      "github": "https://github.com/nib99"
+    },
+    {
+      "title": "Private AI Chatbot For Health Insurance Queries",
+      "description": "An AI-driven chatbot for handling health insurance inquiries securely, integrated with natural language processing for personalized responses and data privacy compliance.",
+      "image": "https://via.placeholder.com/400x250?text=AI+Health+Chatbot",
+      "github": "https://github.com/nib99"
+    },
+    {
+      "title": "Premium Collection Websites",
+      "description": "Elegant websites for curating and showcasing premium product collections, featuring responsive designs, e-commerce integration, and subscription models.",
+      "image": "https://via.placeholder.com/400x250?text=Premium+Collection",
+      "github": "https://github.com/nib99"
+    },
+    {
+      "title": "Luxe Studio Website",
+      "description": "A sophisticated website for a luxury studio, highlighting services with high-end visuals, booking systems, and parallax scrolling for an immersive experience.",
+      "image": "https://via.placeholder.com/400x250?text=Luxe+Studio",
+      "github": "https://github.com/nib99"
+    },
+    {
+      "title": "Charity Donation Website",
+      "description": "A user-friendly platform for charitable donations, with secure payment gateways, impact tracking, and storytelling elements to engage donors.",
+      "image": "https://via.placeholder.com/400x250?text=Charity+Donation",
+      "github": "https://github.com/nib99"
+    },
+    {
+      "title": "Travel Booking Website",
+      "description": "An intuitive travel booking site with search filters, real-time availability, and map integrations for seamless trip planning and reservations.",
+      "image": "https://via.placeholder.com/400x250?text=Travel+Booking",
+      "github": "https://github.com/nib99"
+    },
+    {
+      "title": "AI Bidding Document Checker Tool",
+      "description": "An AI tool to automate bidding document reviews, ensuring compliance, extracting key data, and generating reports for efficient procurement processes.",
+      "image": "https://via.placeholder.com/400x250?text=AI+Bidding+Checker",
+      "github": "https://github.com/nib99"
+    },
+    {
+      "title": "AI Bot Binance Futures Trading",
+      "description": "An intelligent trading bot for Binance futures, using AI algorithms for market analysis, automated trades, and risk management to optimize profits.",
+      "image": "https://via.placeholder.com/400x250?text=AI+Binance+Bot",
+      "github": "https://github.com/nib99"
+    },
+    {
+      "title": "Loyalty Mobile App",
+      "description": "A mobile app for customer loyalty programs, featuring points tracking, rewards redemption, and push notifications using React Native for cross-platform compatibility.",
+      "image": "https://via.placeholder.com/400x250?text=Loyalty+App",
+      "github": "https://github.com/nib99"
+    },
+    {
+      "title": "AI Video Generation Specialist",
+      "description": "A specialized tool for AI-powered video generation, allowing users to create custom videos from text prompts with advanced editing and export features.",
+      "image": "https://via.placeholder.com/400x250?text=AI+Video+Generation",
+      "github": "https://github.com/nib99"
+    }
+  ]
+}
