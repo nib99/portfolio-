@@ -1,210 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nibras Ahmed - Full Stack Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
 <body>
-    <!-- Navigation (unchanged) -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">Nibras Ahmed</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand fw-bold fs-3" href="#home">
+                <i class="fas fa-code text-warning"></i> Nibras Ahmed
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section (unchanged) -->
-    <section id="home" class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center" style="min-height: 50vh; padding: 60px 0;">
         <div class="container">
-            <h1 class="display-4">Nibras Ahmed - Frontend Developer</h1>
-            <p class="lead">Crafting innovative websites and AI-powered tools with HTML5, CSS, JavaScript, and Bootstrap. Explore my portfolio of 10 diverse projects!</p>
-            <button class="btn btn-light btn-lg" onclick="showPopup()">Join My Newsletter</button>
-        </div>
-    </section>
-
-    <!-- About Section (with CV button if added previously, unchanged) -->
-    <section id="about" class="section bg-white">
-        <div class="container">
-            <h2 class="text-center mb-5">About Me</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/500x300?text=Nibras+Ahmed" alt="Nibras Ahmed" class="img-fluid rounded">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="display-5 fw-bold text-white mb-2">
+                            Hi, I'm <span class="text-warning">Nibras Ahmed</span> 🇪🇹
+                        </h1>
+                        <p class="lead text-light mb-2 fs-5">
+                            Full Stack Developer & Mobile App Specialist
+                        </p>
+                        <p class="text-light mb-3 fs-6">
+                            Creating amazing digital experiences with modern technologies. 
+                            Specialized in React, Flutter, Node.js, and cloud solutions.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#portfolio" class="btn btn-warning btn-lg shadow me-3 px-4 py-3">
+                                <i class="fas fa-eye"></i> View My Work
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg shadow px-4 py-3">
+                                <i class="fas fa-envelope"></i> Get In Touch
+                            </a>
+                        </div>
+                        <div class="social-links mt-3">
+                            <a href="https://linkedin.com/in/nibras99" class="btn btn-outline-light btn-lg me-3" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/nib99" class="btn btn-outline-light btn-lg me-3" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://fiverr.com/nibrasah" class="btn btn-outline-light btn-lg me-3" target="_blank">
+                                <i class="fas fa-briefcase"></i>
+                            </a>
+                            <a href="mailto:ahmadnibraas@gmail.com" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <p>Hi, I’m Nibras Ahmed, a passionate frontend developer with 5 years of experience in creating user-friendly, high-performance websites and applications. I specialize in JavaScript, HTML5, CSS, and Bootstrap, delivering clean, scalable solutions for various industries.</p>
-                    <p>I’ve completed 5 projects on Fiverr (@nibrasah), including e-commerce dashboards and static site conversions. My focus is on precision, from pixel-perfect designs to smooth animations, ensuring every project exceeds expectations. Now, showcasing 10 key projects in my portfolio.</p>
-                    <p>Let’s collaborate to bring your vision to life! Check my work on GitHub (@nib99) or connect via LinkedIn (@nibras99).</p>
-                    <a href="path/to/your-cv.pdf" class="btn btn-primary mt-3" download>Download My CV</a>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-image">
+                        <div class="profile-container">
+                            <img src="https://via.placeholder.com/400x400/4f46e5/ffffff?text=NA" alt="Nibras Ahmed" 
+                                 class="img-fluid rounded-circle shadow-lg profile-img">
+                            <div class="floating-icons">
+                                <div class="floating-icon" style="--delay: 0s;">
+                                    <i class="fab fa-react text-info"></i>
+                                </div>
+                                <div class="floating-icon" style="--delay: 1s;">
+                                    <i class="fab fa-flutter text-primary"></i>
+                                </div>
+                                <div class="floating-icon" style="--delay: 2s;">
+                                    <i class="fab fa-node-js text-success"></i>
+                                </div>
+                                <div class="floating-icon" style="--delay: 3s;">
+                                    <i class="fab fa-python text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section (now dynamic) -->
-    <section id="portfolio" class="section bg-light">
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">My Portfolio</h2>
-            <div id="portfolioContainer" class="row">
-                <!-- Projects will be rendered here dynamically -->
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/500x400/667eea/ffffff?text=About+Me" alt="About Nibras Ahmed" 
+                         class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4 text-dark">About Me</h2>
+                    <p class="lead mb-4">
+                        I'm a passionate Full Stack Developer from Ethiopia with 5+ years of experience 
+                        in creating innovative web and mobile applications.
+                    </p>
+                    <p class="mb-4">
+                        My expertise spans across modern frontend frameworks like React and Flutter, 
+                        backend technologies including Node.js and Python, and cloud platforms like AWS and Firebase.
+                    </p>
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <div class="stat-item text-center p-3 bg-white rounded shadow">
+                                <h3 class="fw-bold text-warning mb-1">150+</h3>
+                                <p class="mb-0">Projects Completed</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-item text-center p-3 bg-white rounded shadow">
+                                <h3 class="fw-bold text-warning mb-1">5+</h3>
+                                <p class="mb-0">Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary shadow mt-3" onclick="downloadCV()">
+                        <i class="fas fa-download"></i> Download My CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5 text-dark">My Skills</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card text-center p-4 bg-light rounded shadow h-100">
+                        <div class="skill-icon mb-3">
+                            <i class="fab fa-react fa-3x text-info"></i>
+                        </div>
+                        <h5 class="fw-bold">Frontend Development</h5>
+                        <p class="mb-3">React, Vue.js, Angular, HTML5, CSS3, JavaScript, TypeScript</p>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-info" style="width: 95%"></div>
+                        </div>
+                        <small class="text-muted">95% Proficiency</small>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card text-center p-4 bg-light rounded shadow h-100">
+                        <div class="skill-icon mb-3">
+                            <i class="fas fa-server fa-3x text-success"></i>
+                        </div>
+                        <h5 class="fw-bold">Backend Development</h5>
+                        <p class="mb-3">Node.js, Python, PHP, Express.js, Django, REST APIs</p>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-success" style="width: 90%"></div>
+                        </div>
+                        <small class="text-muted">90% Proficiency</small>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card text-center p-4 bg-light rounded shadow h-100">
+                        <div class="skill-icon mb-3">
+                            <i class="fab fa-flutter fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold">Mobile Development</h5>
+                        <p class="mb-3">Flutter, React Native, Dart, iOS, Android</p>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-primary" style="width: 88%"></div>
+                        </div>
+                        <small class="text-muted">88% Proficiency</small>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="skill-card text-center p-4 bg-light rounded shadow h-100">
+                        <div class="skill-icon mb-3">
+                            <i class="fas fa-cloud fa-3x text-warning"></i>
+                        </div>
+                        <h5 class="fw-bold">Cloud & DevOps</h5>
+                        <p class="mb-3">AWS, Firebase, Docker, Git, CI/CD, MongoDB</p>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-warning" style="width: 85%"></div>
+                        </div>
+                        <small class="text-muted">85% Proficiency</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5 text-dark">My Portfolio</h2>
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <div class="portfolio-filters">
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn active" data-filter="all">All Projects</button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="web">Web Apps</button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="mobile">Mobile Apps</button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="ecommerce">E-commerce</button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="ai">AI Projects</button>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolioContainer" class="row g-4">
+                <!-- Projects will render dynamically -->
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section bg-white">
+    <section id="contact" class="py-5 bg-white">
         <div class="container">
-            <h2 class="text-center mb-5">Get in Touch</h2>
-            <form class="contact-form" id="contactForm">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" required>
+            <h2 class="text-center fw-bold mb-5 text-dark">Get in Touch</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="contact-info text-center p-4 bg-light rounded shadow h-100">
+                                <div class="contact-icon mb-3">
+                                    <i class="fas fa-envelope fa-2x text-primary"></i>
+                                </div>
+                                <h5 class="fw-bold">Email</h5>
+                                <p class="mb-0">
+                                    <a href="mailto:ahmadnibraas@gmail.com" class="text-decoration-none">
+                                        ahmadnibraas@gmail.com
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="contact-info text-center p-4 bg-light rounded shadow h-100">
+                                <div class="contact-icon mb-3">
+                                    <i class="fas fa-phone fa-2x text-success"></i>
+                                </div>
+                                <h5 class="fw-bold">Phone</h5>
+                                <p class="mb-0">
+                                    <a href="tel:+251953536342" class="text-decoration-none">
+                                        +251 953 536 342
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="contact-info text-center p-4 bg-light rounded shadow h-100">
+                                <div class="contact-icon mb-3">
+                                    <i class="fas fa-map-marker-alt fa-2x text-warning"></i>
+                                </div>
+                                <h5 class="fw-bold">Location</h5>
+                                <p class="mb-0">Ethiopia 🇪🇹</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8">
+                    <form class="card p-4 shadow-lg border-0" id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label fw-bold">Name *</label>
+                                <input type="text" class="form-control shadow-sm" id="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label fw-bold">Email *</label>
+                                <input type="email" class="form-control shadow-sm" id="email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label fw-bold">Subject</label>
+                            <input type="text" class="form-control shadow-sm" id="subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label fw-bold">Message *</label>
+                            <textarea class="form-control shadow-sm" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning fw-bold shadow btn-lg">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Send Message</button>
-            </form>
+            </div>
         </div>
     </section>
 
-    <!-- Email Collection Popup -->
-    <div class="popup-overlay" id="popupOverlay">
-        <div class="popup">
-            <span class="close-btn" onclick="closePopup()">&times;</span>
-            <h3>Join My Newsletter</h3>
-            <form id="emailForm">
-                <div class="mb-3">
-                    <label for="popupEmail" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="popupEmail" placeholder="Enter your email" required>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Subscribe</button>
-            </form>
-            <p class="success-message" id="successMessage">Thank you for subscribing!</p>
-        </div>
-    </div>
-
-    <!-- Footer (unchanged) -->
-    <footer>
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-light">
         <div class="container">
-            <p>&copy; 2025 Nibras Ahmed. All rights reserved. | <a href="mailto:ahmadnibraas@gmail.com">ahmadnibraas@gmail.com</a> | <a href="https://linkedin.com/in/nibras99">LinkedIn</a> | <a href="https://fiverr.com/nibrasah">Fiverr</a></p>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Nibras Ahmed. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="mailto:ahmadnibraas@gmail.com" class="text-warning me-3">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/nibras99" class="text-warning me-3" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/nib99" class="text-warning me-3" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://fiverr.com/nibrasah" class="text-warning" target="_blank">
+                            <i class="fas fa-briefcase"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS (unchanged) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- Custom JS (updated for backend integration and dynamic projects) -->
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-warning position-fixed bottom-0 end-0 m-4 rounded-circle shadow" style="display: none; z-index: 1000;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        :root {
+            --primary-color: #4f46e5;
+            --secondary-color: #fbbf24;
+            --dark-color: #1f2937;
+            --light-color: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 { 
+            animation: fadeInDown 1s ease-in-out; 
+        }
+        
+        .hero p { 
+            animation: fadeInUp 1.5s ease-in-out; 
+        }
+
+        .hero-buttons {
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .social-links {
+            animation: fadeInUp 2.5s ease-in-out;
+        }
+
+        /* Profile Image */
+        .profile-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .profile-img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .floating-icons {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+        }
+
+        .floating-icon {
+            position: absolute;
+            font-size: 2rem;
+            animation: orbit 8s linear infinite;
+            animation-delay: var(--delay);
+        }
+
+        .floating-icon:nth-child(1) {
+            top: 10%;
+            left: 80%;
+        }
+
+        .floating-icon:nth-child(2) {
+            top: 80%;
+            left: 10%;
+        }
+
+        .floating-icon:nth-child(3) {
+            top: 20%;
+            left: 10%;
+        }
+
+        .floating-icon:nth-child(4) {
+            top: 70%;
+            left: 80%;
+        }
+
+        /* Portfolio */
+        .portfolio-item {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .portfolio-item img { 
+            width: 100%; 
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(79, 70, 229, 0.9);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        /* Skills */
+        .skill-card {
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Contact Form */
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.25);
+        }
+
+        /* Back to Top */
+        #backToTop {
+            width: 50px;
+            height: 50px;
+            transition: all 0.3s ease;
+        }
+
+        #backToTop:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { 
+                opacity: 0; 
+                transform: translateY(-30px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+
+        @keyframes fadeInUp {
+            from { 
+                opacity: 0; 
+                transform: translateY(30px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { 
+                transform: translateY(0px); 
+            }
+            50% { 
+                transform: translateY(-20px); 
+            }
+        }
+
+        @keyframes orbit {
+            0% { 
+                transform: rotate(0deg) translateX(150px) rotate(0deg); 
+            }
+            100% { 
+                transform: rotate(360deg) translateX(150px) rotate(-360deg); 
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .profile-img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .floating-icon {
+                font-size: 1.5rem;
+            }
+
+            .floating-icon:nth-child(1),
+            .floating-icon:nth-child(2),
+            .floating-icon:nth-child(3),
+            .floating-icon:nth-child(4) {
+                display: none;
+            }
+
+            .hero-buttons .btn {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .social-links a {
+                margin: 0 5px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero {
+                padding: 60px 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .profile-img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation Active State */
+        .navbar-nav .nav-link.active {
+            color: var(--secondary-color) !important;
+        }
+
+        /* Loading Animation */
+        .loading {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+
+        .loading.loaded {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
     <script>
-        const popupOverlay = document.getElementById('popupOverlay');
-        const emailForm = document.getElementById('emailForm');
-        const successMessage = document.getElementById('successMessage');
-        const contactForm = document.getElementById('contactForm');
-        const portfolioContainer = document.getElementById('portfolioContainer');
+        // API Configuration
+        const API_BASE_URL = window.location.hostname === 'localhost' 
+            ? 'http://localhost:3000' 
+            : ''; // Use relative URLs in production
 
-        function closePopup() {
-            popupOverlay.style.display = 'none';
-            localStorage.setItem('popupClosed', 'true'); // Persist close
-        }
-
-        function showPopup() {
-            if (localStorage.getItem('popupClosed') !== 'true') {
-                popupOverlay.style.display = 'flex';
+        // Portfolio Data (fallback if API fails)
+        let portfolioData = [
+            {
+                id: "1",
+                title: "Modern Learning Content Management System Website",
+                description: "A dynamic platform for educators to manage courses, quizzes, and student progress with modern UI/UX, built using React and Node.js for seamless content delivery.",
+                image: "https://via.placeholder.com/400x250/4f46e5/ffffff?text=Modern+LMS",
+                category: "web",
+                technologies: ["React", "Node.js", "MongoDB", "UI/UX"],
+                link: "#",
+                github: "https://github.com/nib99"
+            },
+            {
+                id: "2",
+                title: "Private AI Chatbot For Health Insurance Queries",
+                description: "An AI-driven chatbot for handling health insurance inquiries securely, integrated with natural language processing for personalized responses and data privacy compliance.",
+                image: "https://via.placeholder.com/400x250/10b981/ffffff?text=AI+Health+Chatbot",
+                category: "ai",
+                technologies: ["AI", "NLP", "Python", "Privacy"],
+                link: "#",
+                github: "https://github.com/nib99"
+            },
+            {
+                id: "3",
+                title: "Premium Collection Websites",
+                description: "Elegant websites for curating and showcasing premium product collections, featuring responsive designs, e-commerce integration, and subscription models.",
+                image: "https://via.placeholder.com/400x250/f59e0b/ffffff?text=Premium+Collection",
+                category: "ecommerce",
+                technologies: ["React", "E-commerce", "Subscriptions", "Responsive"],
+                link: "#",
+                github: "https://github.com/nib99"
+            },
+            {
+                id: "4",
+                title: "Luxe Studio Website",
+                description: "A sophisticated website for a luxury studio, highlighting services with high-end visuals, booking systems, and parallax scrolling for an immersive experience.",
+                image: "https://via.placeholder.com/400x250/ef4444/ffffff?text=Luxe+Studio",
+                category: "web",
+                technologies: ["HTML5", "CSS3", "JavaScript", "Parallax"],
+                link: "#",
+                github: "https://github.com/nib99"
+            },
+            {
+                id: "5",
+                title: "Charity Donation Website",
+                description: "A user-friendly platform for charitable donations, with secure payment gateways, impact tracking, and storytelling elements to engage donors.",
+                image: "https://via.placeholder.com/400x250/8b5cf6/ffffff?text=Charity+Donation",
+                category: "web",
+                technologies: ["React", "Payment Gateway", "Analytics", "Storytelling"],
+                link: "#",
+                github: "https://github.com/nib99"
+            },
+            {
+                id: "6",
+                title: "Travel Booking Website",
+                description: "An intuitive travel booking site with search filters, real-time availability, and map integrations for seamless trip planning and reservations.",
+                image: "https://via.placeholder.com/400x250/06b6d4/ffffff?text=Travel+Booking",
+                category: "web",
+                technologies: ["Vue.js", "Maps API", "Real-time", "Booking"],
+                link: "#",
+                github: "https://github.com/nib99"
+            },
+            {
+                id: "7",
+                title: "AI Bidding Document Checker Tool",
+                description: "An AI tool to automate bidding document reviews, ensuring compliance, extracting key data, and generating reports for efficient procurement processes.",
+                image: "https://via.placeholder.com/400x250/dc2626/ffffff?text=AI+Bidding+Checker",
+                category: "ai",
+                technologies: ["AI", "Document Processing", "Automation", "Reports"],
+                link: "#",
+                github: "https://github.com/nib99"
+            },
+            {
+                id: "8",
+                title: "AI Bot Binance Futures Trading",
+                description: "An intelligent trading bot for Binance futures, using AI algorithms for market analysis, automated trades, and risk management to optimize profits.",
+                image: "https://via.placeholder.com/400x250/059669/ffffff?text=AI+Binance+Bot",
+                category: "ai",
+                technologies: ["AI", "Trading", "Binance API", "Risk Management"],
+                link: "#",
+                github: "https://github.com/nib99"
+            },
+            {
+                id: "9",
+                title: "Loyalty Mobile App",
+                description: "A mobile app for customer loyalty programs, featuring points tracking, rewards redemption, and push notifications using React Native for cross-platform compatibility.",
+                image: "https://via.placeholder.com/400x250/7c3aed/ffffff?text=Loyalty+App",
+                category: "mobile",
+                technologies: ["React Native", "Push Notifications", "Rewards", "Cross-platform"],
+                link: "#",
+                github: "https://github.com/nib99"
+            },
+            {
+                id: "10",
+                title: "AI Video Generation Specialist",
+                description: "A specialized tool for AI-powered video generation, allowing users to create custom videos from text prompts with advanced editing and export features.",
+                image: "https://via.placeholder.com/400x250/ea580c/ffffff?text=AI+Video+Generation",
+                category: "ai",
+                technologies: ["AI", "Video Generation", "Text-to-Video", "Editing"],
+                link: "#",
+                github: "https://github.com/nib99"
             }
-        }
+        ];
 
-        // Triggers (unchanged)
-        setTimeout(showPopup, 5000);
-        window.addEventListener('scroll', () => {
-            const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-            if (scrollPercent > 50 && popupOverlay.style.display !== 'flex' && localStorage.getItem('popupClosed') !== 'true') {
-                showPopup();
-            }
-        });
-
-        // Newsletter form submission to backend
-        emailForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const email = document.getElementById('popupEmail').value;
-            if (email) {
-                try {
-                    const response = await fetch('/api/subscribe', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ email }),
-                    });
-                    const data = await response.json();
-                    if (response.ok) {
-                        emailForm.style.display = 'none';
-                        successMessage.style.display = 'block';
-                        successMessage.textContent = data.message;
-                        localStorage.setItem('popupClosed', 'true');
-                        setTimeout(closePopup, 2000);
-                    } else {
-                        alert(data.message);
-                    }
-                } catch (error) {
-                    alert('Failed to subscribe. Please try again.');
-                }
-            }
-        });
-
-        // Contact form submission to backend
-        contactForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            if (name && email && message) {
-                try {
-                    const response = await fetch('/api/contact', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ name, email, message }),
-                    });
-                    const data = await response.json();
-                    if (response.ok) {
-                        alert(data.message);
-                        contactForm.reset();
-                    } else {
-                        alert(data.message);
-                    }
-                } catch (error) {
-                    alert('Failed to send message. Please try again.');
-                }
-            }
-        });
-
-        // Fetch and render projects dynamically
-        async function loadProjects() {
+        // Load projects from API
+        async function loadProjectsFromAPI() {
             try {
-                const response = await fetch('/api/projects');
-                const data = await response.json();
-                data.projects.forEach(project => {
-                    const item = document.createElement('div');
-                    item.className = 'col-md-4 portfolio-item';
-                    item.innerHTML = `
-                        <img src="${project.image}" alt="${project.title}">
-                        <h4>${project.title}</h4>
-                        <p>${project.description}</p>
-                        <a href="${project.github}" class="btn btn-primary">View on GitHub</a>
-                    `;
-                    portfolioContainer.appendChild(item);
-                });
+                const response = await fetch(`${API_BASE_URL}/api/projects`);
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.projects && Array.isArray(data.projects)) {
+                        // Add category and technologies to API projects
+                        portfolioData = data.projects.map(project => ({
+                            ...project,
+                            category: categorizeProject(project.title, project.description),
+                            technologies: extractTechnologies(project.description)
+                        }));
+                        console.log('Projects loaded from API successfully');
+                    }
+                }
             } catch (error) {
-                console.error('Failed to load projects:', error);
-                portfolioContainer.innerHTML = '<p class="text-center">Failed to load projects. Please try again later.</p>';
+                console.log('Using fallback project data');
             }
         }
 
-        // Load projects on page load
-        window.addEventListener('load', loadProjects);
+        // Categorize projects based on title and description
+        function categorizeProject(title, description) {
+            const titleLower = title.toLowerCase();
+            const descLower = description.toLowerCase();
+            
+            if (titleLower.includes('ai') || descLower.includes('artificial intelligence') || 
+                descLower.includes('machine learning') || descLower.includes('chatbot') || 
+                descLower.includes('trading bot')) {
+                return 'ai';
+            }
+            if (titleLower.includes('mobile') || titleLower.includes('app') || 
+                descLower.includes('mobile app') || descLower.includes('react native') || 
+                descLower.includes('flutter')) {
+                return 'mobile';
+            }
+            if (titleLower.includes('ecommerce') || titleLower.includes('e-commerce') || 
+                titleLower.includes('marketplace') || titleLower.includes('collection') || 
+                descLower.includes('e-commerce') || descLower.includes('subscription')) {
+                return 'ecommerce';
+            }
+            return 'web';
+        }
+
+        // Extract technologies from description
+        function extractTechnologies(description) {
+            const techKeywords = {
+                'React': ['react'],
+                'Node.js': ['node.js', 'nodejs'],
+                'Python': ['python'],
+                'Flutter': ['flutter'],
+                'AI': ['ai', 'artificial intelligence', 'machine learning'],
+                'MongoDB': ['mongodb'],
+                'Firebase': ['firebase'],
+                'JavaScript': ['javascript'],
+                'HTML5': ['html5', 'html'],
+                'CSS3': ['css3', 'css'],
+                'Vue.js': ['vue.js', 'vue'],
+                'Angular': ['angular'],
+                'React Native': ['react native'],
+                'TypeScript': ['typescript'],
+                'Express.js': ['express.js', 'express'],
+                'Django': ['django'],
+                'AWS': ['aws'],
+                'Docker': ['docker']
+            };
+            
+            const foundTechs = [];
+            const descLower = description.toLowerCase();
+            
+            Object.entries(techKeywords).forEach(([tech, keywords]) => {
+                if (keywords.some(keyword => descLower.includes(keyword))) {
+                    foundTechs.push(tech);
+                }
+            });
+            
+            return foundTechs.length > 0 ? foundTechs : ['Web Development'];
+        }
+
+        // Initialize Portfolio
+        function initPortfolio() {
+            renderPortfolio('all');
+            initPortfolioFilters();
+        }
+
+        // Render Portfolio Items
+        function renderPortfolio(filter) {
+            const container = document.getElementById('portfolioContainer');
+            const filteredProjects = filter === 'all' 
+                ? portfolioData 
+                : portfolioData.filter(project => project.category === filter);
+
+            container.innerHTML = filteredProjects.map(project => `
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item-wrapper loading">
+                    <div class="portfolio-item position-relative">
+                        <img src="${project.image}" alt="${project.title}" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="text-center">
+                                <h5 class="fw-bold mb-2">${project.title}</h5>
+                                <p class="mb-3">${project.description}</p>
+                                <div class="mb-3">
+                                    ${project.technologies.map(tech => 
+                                        `<span class="badge bg-light text-dark me-1">${tech}</span>`
+                                    ).join('')}
+                                </div>
+                                <div>
+                                    <a href="${project.link}" class="btn btn-warning btn-sm me-2" target="_blank">
+                                        <i class="fas fa-eye"></i> View
+                                    </a>
+                                    <a href="${project.github}" class="btn btn-outline-light btn-sm" target="_blank">
+                                        <i class="fab fa-github"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-2">${project.title}</h5>
+                            <p class="text-muted mb-3">${project.description}</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">${project.category.toUpperCase()}</small>
+                                <div>
+                                    <a href="${project.link}" class="btn btn-sm btn-outline-primary me-1" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="${project.github}" class="btn btn-sm btn-outline-dark" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            // Animate portfolio items
+            setTimeout(() => {
+                document.querySelectorAll('.portfolio-item-wrapper').forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.add('loaded');
+                    }, index * 100);
+                });
+            }, 100);
+        }
+
+        // Portfolio Filter Functionality
+        function initPortfolioFilters() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    // Filter portfolio
+                    const filter = button.getAttribute('data-filter');
+                    renderPortfolio(filter);
+                });
+            });
+        }
+
+        // Contact Form Functionality
+        function initContactForm() {
+            const form = document.getElementById('contactForm');
+            
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const formData = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    subject: document.getElementById('subject').value,
+                    message: document.getElementById('message').value
+                };
+                
+                const submitBtn = form.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+                
+                try {
+                    // Try to send via API first
+                    const response = await fetch(`${API_BASE_URL}/api/contact`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(formData)
+                    });
+                    
+                    if (response.ok) {
+                        showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+                        form.reset();
+                    } else {
+                        throw new Error('API submission failed');
+                    }
+                } catch (error) {
+                    // Fallback to mailto if API fails
+                    const mailtoLink = `mailto:ahmadnibraas@gmail.com?subject=${encodeURIComponent(formData.subject || 'Contact from Portfolio')}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
+                    window.location.href = mailtoLink;
+                    showNotification('Opening your email client...', 'info');
+                    form.reset();
+                }
+                
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            });
+        }
+
+        // Notification System
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `alert alert-${type === 'success' ? 'success' : 'info'} position-fixed`;
+            notification.style.cssText = `
+                top: 20px;
+                right: 20px;
+                z-index: 1050;
+                min-width: 300px;
+                animation: slideInRight 0.3s ease;
+            `;
+            notification.innerHTML = `
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-${type === 'success' ? 'check-circle' : 'info-circle'} me-2"></i>
+                    ${message}
+                    <button type="button" class="btn-close ms-auto" onclick="this.parentElement.parentElement.remove()"></button>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                if (notification.parentElement) {
+                    notification.remove();
+                }
+            }, 5000);
+        }
+
+        // Smooth Scrolling for Navigation
+        function initSmoothScrolling() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Navigation Active State
+        function initNavigationActiveState() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            
+            window.addEventListener('scroll', () => {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        }
+
+        // Back to Top Button
+        function initBackToTop() {
+            const backToTopBtn = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopBtn.style.display = 'block';
+                } else {
+                    backToTopBtn.style.display = 'none';
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // CV Download Function
+        function downloadCV() {
+            // Create a sample CV content
+            const cvContent = `
+NIBRAS AHMED - Full Stack Developer
+Email: ahmadnibraas@gmail.com
+Phone: +251 953 536 342
+LinkedIn: linkedin.com/in/nibras99
+GitHub: github.com/nib99
+
+EXPERIENCE:
+- 5+ years in Full Stack Development
+- 150+ projects completed
+- Expertise in React, Flutter, Node.js, Python
+
+SKILLS:
+- Frontend: React, Vue.js, Angular, HTML5, CSS3, JavaScript
+- Backend: Node.js, Python, PHP, Express.js, Django
+- Mobile: Flutter, React Native, Dart
+- Cloud: AWS, Firebase, Docker, MongoDB
+
+CONTACT:
+Ready to work on your next project!
+            `;
+            
+            const blob = new Blob([cvContent], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Nibras_Ahmed_CV.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+            
+            showNotification('CV downloaded successfully!', 'success');
+        }
+
+        // Typing Animation for Hero Section
+        function initTypingAnimation() {
+            const titles = [
+                'Full Stack Developer',
+                'Mobile App Specialist', 
+                'React Expert',
+                'Flutter Developer',
+                'Cloud Solutions Architect'
+            ];
+            
+            let titleIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            const typeSpeed = 100;
+            const deleteSpeed = 50;
+            const pauseTime = 2000;
+            
+            const titleElement = document.querySelector('.hero p.lead');
+            
+            function typeTitle() {
+                const currentTitle = titles[titleIndex];
+                
+                if (isDeleting) {
+                    titleElement.textContent = currentTitle.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    titleElement.textContent = currentTitle.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+                
+                let speed = isDeleting ? deleteSpeed : typeSpeed;
+                
+                if (!isDeleting && charIndex === currentTitle.length) {
+                    speed = pauseTime;
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    titleIndex = (titleIndex + 1) % titles.length;
+                }
+                
+                setTimeout(typeTitle, speed);
+            }
+            
+            // Start typing animation after page load
+            setTimeout(typeTitle, 1000);
+        }
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Load projects from API first
+            await loadProjectsFromAPI();
+            
+            // Initialize all components
+            initPortfolio();
+            initContactForm();
+            initSmoothScrolling();
+            initNavigationActiveState();
+            initBackToTop();
+            initTypingAnimation();
+            
+            // Add loading animation to sections
+            const sections = document.querySelectorAll('section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('loaded');
+                    }
+                });
+            });
+            
+            sections.forEach(section => {
+                section.classList.add('loading');
+                observer.observe(section);
+            });
+        });
+
+        // Add CSS for additional animations
+        const additionalStyles = `
+            @keyframes slideInRight {
+                from {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            
+            .section.loading {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: all 0.8s ease;
+            }
+            
+            .section.loaded {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        `;
+        
+        const styleSheet = document.createElement('style');
+        styleSheet.textContent = additionalStyles;
+        document.head.appendChild(styleSheet);
     </script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'979207be67607893',t:'MTc1Njg2ODc3OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
